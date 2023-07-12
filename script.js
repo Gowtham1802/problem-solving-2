@@ -82,3 +82,30 @@ function vowel_count(str1)
   return vol_count;
 }
 console.log(vowel_count("Three are Best Friends here Abi, Bala , Gowtham "));
+
+
+// 6.Write a JavaScript function to add rows to a table.
+// Sample HTML file:
+// &lt;!DOCTYPE html&gt;
+// &lt;html&gt;&lt;head&gt;&lt;meta charset=utf-8 /&gt;
+// &lt;title&gt;Insert row in a table - w3resource&lt;/title&gt;
+// &lt;/head&gt;&lt;body&gt;
+// &lt;table id=&quot;sampleTable&quot; border=&quot;1&quot;&gt;
+// &lt;tr&gt;&lt;td&gt;Row1 cell1&lt;/td&gt;
+// &lt;td&gt;Row1 cell2&lt;/td&gt;&lt;/tr&gt;
+// &lt;tr&gt;&lt;td&gt;Row2 cell1&lt;/td&gt;
+// &lt;td&gt;Row2 cell2&lt;/td&gt;&lt;/tr&gt;
+// &lt;/table&gt;&lt;br&gt;
+// &lt;input type=&quot;button&quot; onclick=&quot;insert_Row()&quot; value=&quot;Insert row&quot;&gt;
+// &lt;/body&gt;&lt;/html&gt;
+
+
+
+function insert_Row()
+{
+var x=document.getElementById('sampleTable').insertRow(0);
+var y = x.insertCell(0);
+var z = x.insertCell(1);
+y.innerHTML="New Cell1";
+z.innerHTML="New Cell2";
+}
