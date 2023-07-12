@@ -4,18 +4,29 @@ console.log(num);
 
 // 1.Write a JavaScript function to check if a given number is even or odd.
 
-const myNumber = prompt("");
-if(!isNaN(Number(myNumber))){
-  if(myNumber % 2 == 0 ){
-  console.log("the number is even" )
-  }else{
-    console.log("the number is odd")
-  }
+// const myNumber = prompt("");
+// if(!isNaN(Number(myNumber))){
+//   if(myNumber % 2 == 0 ){
+//   console.log("the number is even" )
+//   }else{
+//     console.log("the number is odd")
+//   }
+// }
+// else{
+//   console.log(`not a string`);
+// }
+
+
+// 2.Write a JavaScript program to calculate the factorial of a number.
+
+let i;
+let fact = 1;
+let myNum = 7;
+
+for(i=1; i<=myNum; i++){
+
+  fact = fact*i;
+  console.log(fact)
 }
-else{
-  console.log(`not a string`);
-}
 
-
-2.Write a JavaScript program to calculate the factorial of a number.
-
+console.log("factorial :"+fact);
