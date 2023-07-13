@@ -97,7 +97,7 @@ console.log(vowel_count("Three are Best Friends here Abi, Bala , Gowtham "));
 // &lt;td&gt;Row2 cell2&lt;/td&gt;&lt;/tr&gt;
 // &lt;/table&gt;&lt;br&gt;
 // &lt;input type=&quot;button&quot; onclick=&quot;insert_Row()&quot; value=&quot;Insert row&quot;&gt;
-// &lt;/body&gt;&lt;/html&gt;
+// &lt;/body&gt;&lt;/html&g5t;
 
 
 
@@ -106,6 +106,26 @@ function insert_Row()
 var x=document.getElementById('sampleTable').insertRow(0);
 var y = x.insertCell(0);
 var z = x.insertCell(1);
-y.innerHTML="New Cell1";
-z.innerHTML="New Cell2";
+var a = x.insertCell(0);
+var b = x.insertCell(1);
+y.innerHTML="Suhan Rithvik";
+z.innerHTML="Mobile App Developer";
+
+a.innerHTML="Surya";
+b.innerHTML="Full Stack Developer";
+}
+
+
+
+
+// 4.Write a JavaScript program to check if a given number, is a perfect square.
+
+let squareNumber = prompt("enter an number")
+
+let A =Math.sqrt(squareNumber);
+
+if(squareNumber == A*A){
+  console.log("this is an perfect square")
+}else{
+  console.log("its not an square")
 }
