@@ -21,9 +21,9 @@ else{
 
 let i;
 let fact = 1;
-let myNum = 7;
+let myValue = 7;
 
-for(i=1; i<=myNum; i++){
+for(i=1; i<=myValue; i++){
 
   fact = fact*i;
   console.log(fact)
