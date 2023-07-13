@@ -135,19 +135,19 @@ if(squareNumber == A*A){
 
 // 8. Write a JavaScript program to find the Armstrong numbers of 3 digits.
 
-let i, j, k;
-i = 1;
-j = 0;
-k = 0;
+let a, b, c;
+a = 1;
+b = 0;
+c = 0;
 
-for(i=1; i<10; i++)
+for(a=1; a<10; a++)
 {
-  for(j=0; j<10; j++)
+  for(b=0; b<10; b++)
   {
-    for(k=0; k<10; k++)
+    for(c=0; c<10; c++)
     {
-      let pow =(Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3));
-      let plus = (i*100 + j*10 + k);
+      let pow =(Math.pow(a,3) + Math.pow(b,3) + Math.pow(c,3));
+      let plus = (a*100 + b*10 + c);
       if(pow==plus)
       {
         console.log(pow);
