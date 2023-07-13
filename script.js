@@ -4,32 +4,32 @@ console.log(num);
 
 // 1.Write a JavaScript function to check if a given number is even or odd.
 
-// const myNumber = prompt("");
-// if(!isNaN(Number(myNumber))){
-//   if(myNumber % 2 == 0 ){
-//   console.log("the number is even" )
-//   }else{
-//     console.log("the number is odd")
-//   }
-// }
-// else{
-//   console.log(`not a string`);
-// }
+const myNumber = prompt("");
+if(!isNaN(Number(myNumber))){
+  if(myNumber % 2 == 0 ){
+  console.log("the number is even" )
+  }else{
+    console.log("the number is odd")
+  }
+}
+else{
+  console.log(`not a string`);
+}
 
 
 // 2.Write a JavaScript program to calculate the factorial of a number.
 
-// let i;
-// let fact = 1;
-// let myNum = 7;
+let i;
+let fact = 1;
+let myNum = 7;
 
-// for(i=1; i<=myNum; i++){
+for(i=1; i<=myNum; i++){
 
-//   fact = fact*i;
-//   console.log(fact)
-// }
+  fact = fact*i;
+  console.log(fact)
+}
 
-// console.log("factorial :"+fact);
+console.log("factorial :"+fact);
 
 
 
@@ -128,4 +128,30 @@ if(squareNumber == A*A){
   console.log("this is an perfect square")
 }else{
   console.log("its not an square")
+}
+
+
+
+
+// 8. Write a JavaScript program to find the Armstrong numbers of 3 digits.
+
+let i, j, k;
+i = 1;
+j = 0;
+k = 0;
+
+for(i=1; i<10; i++)
+{
+  for(j=0; j<10; j++)
+  {
+    for(k=0; k<10; k++)
+    {
+      let pow =(Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3));
+      let plus = (i*100 + j*10 + k);
+      if(pow==plus)
+      {
+        console.log(pow);
+      }
+    }
+  }
 }
